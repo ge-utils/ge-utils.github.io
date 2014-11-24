@@ -1,0 +1,7 @@
+*.py[cd]
+*~
+*.swp
+
+src/venv/
+src/output/
+src/cache/

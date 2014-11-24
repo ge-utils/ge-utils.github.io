@@ -1,0 +1,57 @@
+Title: glite-info-dynamic-ge v7.0.0
+Date: 2014-07-17 13:21
+Category: announces
+Tags: glite-info-dynamic-ge, v7.0.0, announces
+Summary: Release glite-info-dynamic-ge version 7.0.0.
+
+<link rel="stylesheet" type="text/css" media="screen" href="/theme/css/bootstraped.css">
+
+# Features #
+* Cache mechanism for qstat data
+    <span class="label label-info" style="margin-right:3px">
+        <span class="text">GGUS</span> <a href="https://ggus.eu/index.php?mode=ticket_info&ticket_id=78607" target="_blank">#78607</a></span>
+
+# Fixes #
+* Missing GLUE attributes due to syntax bug
+    <span class="label label-info" style="margin-right:3px">
+        <span class="text">GGUS</span> <a href="https://ggus.eu/index.php?mode=ticket_info&ticket_id=83352" target="_blank">#83352</a></span>
+    <span class="label label-info" style="margin-right:3px">
+        <span class="text">GGUS</span> <a href="https://ggus.eu/index.php?mode=ticket_info&ticket_id=90353" target="_blank">#90353</a></span>
+* Version string for OGS/GE
+    <span class="label label-info" style="margin-right:3px">
+        <span class="text">GGUS</span> <a href="https://ggus.eu/index.php?mode=ticket_info&ticket_id=90353" target="_blank">#90353</a></span>
+* Segmentation fault when parsing big qstat XML files
+    <span class="label label-info" style="margin-right:3px">
+        <span class="text">GGUS</span> <a href="https://ggus.eu/index.php?mode=ticket_info&ticket_id=93506" target="_blank">#93506</a></span>
+* /etc/lrms directory creation
+    <span class="label label-info" style="margin-right:3px">
+        <span class="text">GGUS</span> <a href="https://ggus.eu/index.php?mode=ticket_info&ticket_id=94312" target="_blank">#94312</a></span>
+
+# Configuration #
+Information provider script has been renamed to glite-info-dynamic-ge. To make GIP plugins aware of the change one can either:
+
+> Run YAIM configuration (`config_gip_sge` will be enough)
+
+OR
+
+> Manually editing `/var/lib/bdii/gip/plugin/glite-info-dynamic-ce` file to reflect the change
+
+# Packages #
+
+<span class="label label-info" style="margin-right:3px">
+    <a href="">SL6</a></span>
+<span class="label label-info" style="margin-right:3px">
+    <a href="">SL5</a></span>
+`emi-ge-utils-2.0.2-2.1.noarch.rpm`
+<br>
+<span class="label label-info" style="margin-right:3px">
+    <a href="">SL6</a></span>
+<span class="label label-info" style="margin-right:3px">
+    <a href="">SL5</a></span>
+`glite-info-dynamic-ge-7.0.0-3.1.noarch.rpm`
+<br>
+<span class="label label-info" style="margin-right:3px">
+    <a href="">SL6</a></span>
+<span class="label label-info" style="margin-right:3px">
+    <a href="">SL5</a></span>
+`glite-yaim-ge-utils-4.4.0-2.1`
