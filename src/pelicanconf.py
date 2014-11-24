@@ -3,12 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Pablo Orviz'
-SITENAME = u'info-dynamic-scheduler'
+SITENAME = u'ge-utils'
 SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Madrid'
 
 DEFAULT_LANG = u'en'
 
