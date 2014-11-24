@@ -40,3 +40,5 @@ DEFAULT_PAGINATION = 10
 #THEME = "notmyidea"
 THEME = "pelican-blueidea"
 #THEME = "storm"
+
+MENUITEMS=[('all', '/archives.html')]
