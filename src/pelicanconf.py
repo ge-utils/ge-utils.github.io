@@ -42,4 +42,5 @@ THEME = "pelican-blueidea"
 #THEME = "storm"
 
 MENUITEMS=[('all', '/archives.html'),
-           ('info-dynamic-scheduler', '/category/info-dynamic-scheduler.html')]
+           #('info-dynamic-scheduler', '/category/info-dynamic-scheduler.html')
+           ]
