@@ -1,5 +1,6 @@
 Title: glite-info-dynamic-ge v7.2.0
 Date: 2014-11-20 16:52
+Category: info-dynamic-scheduler
 Tags: info-dynamic-scheduler, glite-info-dynamic-ge, v7.2.0, announces
 Summary: Release glite-info-dynamic-ge version 7.2.0.
 
