@@ -41,6 +41,6 @@ DEFAULT_PAGINATION = 10
 THEME = "pelican-blueidea"
 #THEME = "storm"
 
-MENUITEMS=[('all', '/archives.html'),
-           #('info-dynamic-scheduler', '/category/info-dynamic-scheduler.html')
-           ]
+MENUITEMS=[
+            ('all', '/archives.html'),
+          ]
