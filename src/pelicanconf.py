@@ -42,5 +42,5 @@ THEME = "pelican-blueidea"
 #THEME = "storm"
 
 MENUITEMS=[
-            ('all', '/archives.html'),
+            ('archives', '/archives.html'),
           ]

@@ -59,7 +59,7 @@ html:
 
 clean:
 	#[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)/*.html $(OUTPUTDIR)/author $(OUTPUTDIR)/category $(OUTPUTDIR)/tag $(OUTPUTDIR)/theme
+	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)/*.html $(OUTPUTDIR)/author $(OUTPUTDIR)/category $(OUTPUTDIR)/tag $(OUTPUTDIR)/theme $(OUTPUTDIR)/pages
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)

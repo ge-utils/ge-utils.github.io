@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>ge-utils - glite-yaim-ge-utils-4.5.0</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">ge-utils </a></h1>
+                <nav><ul>
+                    <li><a href="/archives.html">archives</a></li>
+    
+                        <li><a href="/pages/contact.html">contact</a></li>
+                    <li><a href="/category/releases.html">releases</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/emi-cream-ge-v230.html">emi-cream-ge v2.3.0</a></h1>
+<footer class="post-info">
+        <span>jue 07 agosto 2014</span>
+<span>| tags: <a href="/tag/emi-cream-ge.html">emi-cream-ge</a><a href="/tag/v230.html">v2.3.0</a><a href="/tag/glite-yaim-ge-utils-450.html">glite-yaim-ge-utils-4.5.0</a></span>
+</footer><!-- /.post-info --><p><link rel="stylesheet" type="text/css" media="screen" href="/theme/css/bootstraped.css"></p>
+<h1>glite-yaim-ge-utils v4.5.0</h1>
+<h2>Features</h2>
+<ul>
+<li>Introduces an updated blah.config configuration for Grid Engine where GE environment variables are automatically loaded by blahd daemons</li>
+<li>Introduces a different path for the blah job registry (in compliance with blah releases for other LRMS releases)</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li>Load of GE environment variables in blah.config
+     <span class="label label-info" style="margin-right:3px">
+        <span class="text">GGUS</span> <a href="https://ggus.eu/index.php?mode=ticket_info&ticket_id=102418" target="_blank">#102418</a></span></li>
+</ul>
+<h2>Configuration</h2>
+<p>Yaim reconfiguration is mandatory. However, before reconfiguration, the site admin has to migrate the blah job registry manually. Failure to complete this step will result in the lost of blah records for all existing jobs. The full procedure is described hereafter:</p>
+<ul>
+<li>Stop all gLite services</li>
+</ul>
+<div class="highlight"><pre>/etc/init.d/gLite stop
+</pre></div>
+
+
+<ul>
+<li>Copy the present blah registry to the new location making sure that all the permissions are correct</li>
+</ul>
+<div class="highlight"><pre>mkdir /var/blah
+chown tomcat:tomcat /var/blah
+chmod 771 /var/blah
+cp -rp /var/tmp/cream_tomcat_registry.db /var/blah/user_blah_job_registry.bjr
+</pre></div>
+
+
+<ul>
+<li>Reconfigure the node with yaim</li>
+</ul>
+<div class="highlight"><pre>/opt/glite/yaim/bin/yaim -c -s site-info.def -n creamCE -n SGE_utils
+</pre></div>
+
+
+<h2>Packages</h2>
+<p><span class="label label-info" style="margin-right:3px">
+    <a href="http://download.opensuse.org/repositories/home:/aloga:/ge-utils/sl6/noarch/glite-yaim-ge-utils-4.5.0-3.1.noarch.rpm">SL6</a></span>
+<span class="label label-info" style="margin-right:3px">
+    <a href="http://download.opensuse.org/repositories/home:/aloga:/ge-utils/sl5/noarch/glite-yaim-ge-utils-4.5.0-3.1.noarch.rpm">SL5</a></span>
+<code>glite-yaim-ge-utils-4.5.0-3.1</code></p>                </article>
+<p class="paginator">
+    Page 1 / 1
+</p>
+            </aside><!-- /#featured -->
+            </ol><!-- /#posts-list -->
+            </section><!-- /#content -->
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
